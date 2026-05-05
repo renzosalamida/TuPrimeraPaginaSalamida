@@ -1,0 +1,12 @@
+{% extends "blog/base.html" %}
+
+{% block contenido %}
+<h2>Resultados</h2>
+
+{% for post in resultados %}
+    <p>{{ post.titulo }}</p>
+{% empty %}
+    <p>No se encontraron resultados</p>
+{% endfor %}
+
+{% endblock %}
